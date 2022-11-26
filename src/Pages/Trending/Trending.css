@@ -1,0 +1,14 @@
+
+.pageTitle{
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}  
+.trending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}

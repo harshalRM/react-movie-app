@@ -1,0 +1,160 @@
+.movie-container{
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right center ;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie-content{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1));
+    backdrop-filter: blur(10px);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+.movie-content .left{
+    width: 35%;
+    float: left;
+    padding: 20px;
+}
+.movie-content .right{
+    width: 45%;
+    float: right;
+    padding: 10px;
+    color: white;
+}
+.right h2{
+    font-style: italic;
+}
+.right .genres{
+    display: inline-block;
+}
+.right .genres h3{
+    border: 2px solid #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 11px;
+    margin-right: 18px;
+}
+.right i{
+    color: yellow;
+    margin-right: 8px;
+}
+
+.slick-slide > div{
+    margin: 0px 10px;
+}
+.slick-list{
+    margin: 0px -10px;
+}
+.card-container{
+    height: 450px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 16px;
+}
+.card{
+    border-radius: 16px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.card img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+.videos{
+    background-color: black;
+    color: white;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 390px) and (max-width: 575.98px) { 
+    .movie-container{
+        height: 400px;
+    }
+    .movie-content{
+        height: 20%;
+        width: 30%;
+    }
+    .movie-content .left{
+        width: 7%;
+    }
+   
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .movie-container{
+        height: 500px;
+    }
+    .movie-content{
+        height: 30%;
+        width: 40%;
+    }
+    .movie-content .left{
+        width: 13%;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .movie-container{
+        height: 600px;
+    }
+    .movie-content{
+        height: 40%;
+        width: 50%;
+    }
+    .movie-content .left{
+        width: 27%;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .movie-container{
+        height: 700px;
+    }
+    .movie-content{
+        height: 50%;
+        width: 60%;
+    }
+    .right h1{
+        font-size: 10px;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .movie-container{
+        height: 800px;
+    }
+    .movie-content{
+        height: 60%;
+        width: 70%;
+    }
+    .movie-content .left{
+        width: 35%;
+    }
+    .movie-content .left img{
+        height: 50%;
+    }
+ }
+}
